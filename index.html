@@ -42,9 +42,24 @@
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#background">Background</a>
           </li>
-          <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#visualizations">Visualizations</a>
+
+<!-- i'm working on a dropdown menu for visualizations -->
+          <li class="nav-item dropdown">
+
+          
+
+          <a class="nav-link js-scroll-trigger dropdown-toggle" href="#visualizations">Visualizations</a>
+
+            <ul class="dropdown-menu">
+              <li>
+                <a class="nav-link js-scroll-trigger dropdown-toggle" data-toggle="dropdown" href="#" role="button">graph1<span class="caret"></span></a>
+              </li>
+            </ul>
+
+
           </li>
+<!-- /end dropdown -->
+
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#machinelearning">Machine Learning</a>
           </li>
@@ -98,6 +113,22 @@
           <h2 class="mb-5">Visualizations</h2>
           <div class="d-flex flex-wrap">
             
+            <!-- SAMPLE GRAPHS -->
+            <center>
+            <div id="bar"></div>
+            <script type="text/javascript" src="visualizations/barsample.js"></script>
+            </center>
+  
+            <hr>
+  
+            <center>
+            <div id="line"></div>
+            <script type="text/javascript" src="visualizations/linesample.js"></script>
+            </center>
+
+            <hr>
+            <!-- END/SAMPLE GRAPHS -->
+
             <div class="p-2 w-50">
               <center><bold>marital status by month/year</bold></center>
             </div>
@@ -157,8 +188,7 @@
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="outliers">
         <div class="my-auto">
           <h2 class="mb-5">Significant Outliers</h2>
-          <div class="subheading mb-5">Mr. 8045</div>
-          professional ho
+          Mr. 8045
         </div>
       </section>
 
