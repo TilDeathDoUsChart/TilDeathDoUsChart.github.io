@@ -18,7 +18,7 @@ function makeBar(dataset) {
     x: x, 
     y: y,
     type: "bar",
-    marker: {color: rgb(26, 82, 118)} //change to matching color
+    marker: {color: '#1A5276'} //change to matching color
   };
 
   var data = [trace];
