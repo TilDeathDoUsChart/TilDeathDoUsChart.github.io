@@ -1,7 +1,7 @@
 makePlot();
 
 function makePlot() {
-  d3.csv('sample.csv', function(data){makeLine(data)}); //enter file name
+  d3.csv('visualizations/sample.csv', function(data){makeLine(data)}); //enter file name
 };
 
 function makeLine(dataset) {
