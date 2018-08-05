@@ -126,11 +126,26 @@
       <section class="resume-section p-3 p-lg-5 d-flex d-column" id="background">
         <div class="my-auto">
           <h2 class="mb-5">Background</h2>
-          -explanation of how we chose variables<br>
-          -maybe a screenshot of the variable index (https://www.nlsinfo.org/investigator/pages/search.jsp?s=NLSY97) to show how we downloaded only the data for our chosen variables<br>
-          -why 97 data instead of 79 (more relevant/relatable for majority of classmates; included cohabitation and other variables we were interested in)<br>
-          -define our DVs: Sad and Alone (SA), Happily Married (HM), Train Wreck (TW), Got there Eventually (GE)<br>
-          -data storage
+          <p>For this project, we utilized data from the National Longitudinal Survey of Youth 1997, Sponsored by the Bureau of Labor Statistics.  This study was dedicated to tracking the labor market and other life exeriences of American men and women</p>
+          <br>
+          <p>The 1997 study was chosen over the 1979 study, as we felt it was more relevant to the majority of our classmates and included a number of variables we were specifically interested in.</p>
+          <p>In order to get a better understanding of the data, and begin to dephicer what we wanted to focus our model on, we utilized pandas, matplotlib, and plotly to visualize the possible relationship between certain variables, as you will see below.  These variables included everything from age of first incarceration, marital status, personality, highest degree, and even favortie ice cream favor.  Out of this exploration, we chose to engineer a feautre termed the Love Chaos Index (LCI).</p>
+          <h4>LCI</h4>
+          <p>The LCI is a measure of how objectively choatic someone's love life is over the course of the study.  The more changes in your relationship/marital status, the higher your LCI.  To create the LCI feature, we looked at the marrige variable over the span of the study.  The specific question (__________), asked about the "Marital Never married, cohabiting
+            Never married, not cohabiting
+            Married, spouse present
+            Married, spouse absent
+            Separated, cohabiting
+            Separated, not cohabiting
+            Divorced, cohabiting
+            Divorced, not cohabiting
+            Widowed, cohabiting
+            Widowed, not cohabiting</p><br>
+          <p>Depending on whether or not there was a shift in a respondant's answer from the previous month, the LCI would change.  Most changes result in a postiive 1 being added to the LCI.  However, some shifts, as in first marriage, or reconciliation of a marrige, would result in a -1 or .5 shift.
+          After we had calculated the LCI of all the respondant's in the survey, we created the scoring divisions, which detail a final, qualitative measure of a person's LCI.  The categories are: Sad and Alone (SA), Happily Married (HM), Train Wreck (TW), Got there Eventually (GE)</p><br>
+          <h4>Model Creation</h4>
+          After the formation of the LCI, we moved on to creating a model that could predict a person's LCI, based on certain variables affecting thier live.  To find the variables that would be the most vaulable, and therefore be weighted heavier, we created a simple model that judged a single variable.  After completing the model for the single variable, we added an iterator to loop through the variables included in the longitudinal study, finding which ones were most influenctial on a person's LCI.  </p>
+        
         </div>
       </section>
 
@@ -222,7 +237,8 @@
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="conclusions">
         <div class="my-auto">
           <h2 class="mb-5">Conclusions</h2>
-          Conclusions here.<br>
+          <p>One of the first conclusions we saw from the data was the amount of valid skips and nonresponses within certain questions, denoted as (-4) and (-5) in the data.  We noticed that some questions, especially ones that were very intetesting, had a majority of respondants skipping the question or choosing to not respond to it.  In some cases, this decreased the significance of the responses.</p><br>
+          <p></p>
           error sources<br>
           designer babies
         </div>
