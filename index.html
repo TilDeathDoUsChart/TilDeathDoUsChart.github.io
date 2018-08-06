@@ -21,6 +21,7 @@
     <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
     <script src="https://d3js.org/d3.v4.min.js"></script>
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <link href="https://www.w3schools.com/w3css/4/w3.css" rel="stylesheet" >
 
     <!-- Custom styles for this template -->
     <link href="css/resume.min.css" rel="stylesheet">
@@ -44,9 +45,17 @@
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#background">Background</a>
           </li>
+          
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#exploration">Exploration</a>
+            <!-- <div class='dropdown-btn'> -->
+            <a class='nav-link dropdown-btn'>Exploration <i class="fa fa-caret-down"></i></a>
+            <div class="dropdown-container" id="hint">
+              <a class='nav-link dropdown-container js-scroll-trigger' style='text-transform:none' href="#exploration">Link 1</a>
+              <a class='nav-link dropdown-container js-scroll-trigger' style='text-transform:none' href="#explore2">Link 2</a>
+              <a class='nav-link dropdown-container js-scroll-trigger' style='text-transform:none' href="#explore3">Link 3</a>
+            </div>
           </li>
+
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#machinelearning">Machine Learning</a>
           </li>
@@ -86,40 +95,76 @@
       <!-- HOME -->
       <section class="resume-section p-3 p-lg-5 d-flex d-column" id="home">
         <div class="my-auto">
-          <h1 class="mb-0">Til Death Do Us
+          <h1 class="mb-0"><fancystyle>Til Death Do Us</fancystyle>
             <span class="text-primary">Chart</span>
           </h1>
           <div class="subheading mb-5"><big><big>A Study on the Effect of Life Events on Marital Status</big></big></div>
 
-            <div class="d-flex flex-wrap">
-              <div class="p-2 w-33">
-                <center><bold>Scott Mcalister</bold></center>
-              </div>
-              <div class="p-2 w-33">
-                <center>Thomas Oldfield</center>
-              </div>
-              <div class="p-2 w-33">
-                <center>Heather Rodney</center>
-              </div>
-              <div class="p-2 w-33">
-                <center>Brian Rotolo</center>
-              </div>
-              <div class="p-2 w-33">
-                <center>Elizabeth Yim</center>
-              </div>
-              <div class="p-2 w-33">
-                <center>George Washington University<br>
-                  Data Visualization & Analytics Boot Camp<br>
-                  02.2018 - 08.2018
-                </center>
-              </div>
+          <br><br><br><br><br><br>
+
+          <div class='col-20'>
+            <div class="w3-tooltip">
+              <img src="img/scott.png" class="w3-round w3-hover-opacity avatar" style="width:70px">
+              <span class="w3-text w3-round w3-tag w3-small w3-white" style="position:absolute; width:140px; left:-35px; bottom:-25px">
+                <font color=#1A5276>
+                  Scott Mcalister
+                </font>
+              </span>
+            </div>
+          </div>
+
+          <div class='col-20'>
+            <div class="w3-tooltip">
+              <img src="img/thomas.png" class="w3-round w3-hover-opacity avatar" style="width:70px">
+              <span class="w3-text w3-round w3-tag w3-small w3-white" style="position:absolute; width:140px; left:-35px; bottom:-25px">
+                <font color=#1A5276>
+                Thomas Oldfield
+                </font>
+              </span>
+            </div>
+          </div>
+
+          <div class='col-20'>
+            <div class="w3-tooltip">
+              <img src="img/heather.png" class="w3-round w3-hover-opacity avatar" style="width:70px">
+              <span class="w3-text w3-round w3-tag w3-small w3-white" style="position:absolute; width:140px; left:-35px; bottom:-25px">
+                <font color=#1A5276>
+                Heather Rodney
+                </font>
+              </span>
+            </div>
+          </div>
+
+          <div class='col-20'>
+            <div class="w3-tooltip">
+              <img src="img/brian.png" class="w3-round w3-hover-opacity avatar" style="width:70px">
+              <span class="w3-text w3-round w3-tag w3-small w3-white" style="position:absolute; width:140px; left:-35px; bottom:-25px">
+                <font color=#1A5276>
+                Brian Rotolo
+                </font>
+              </span>
+            </div>
+          </div>
+
+          <div class='col-20'>
+            <div class="w3-tooltip">
+              <a href="yimej.github.io" target="_blank">
+              <img src="img/elizabeth.png" class="w3-round w3-hover-opacity avatar" style="width:70px"></a>
+              <span class="w3-text w3-round w3-tag w3-small w3-white" style="position:absolute; width:140px; left:-35px; top:110%">
+                <font color=#1A5276>
+                Elizabeth Yim
+                </font>
+              </span>
+            </div>
+          </div>
 
             <!-- THIS IS FOR THE LINK ICON!!! <i class="fa fa-external-link" aria-hidden="true"></i> -->
-          <br><br><br><br><br><br><br>
+          <br><br><br><br><br><br>
           <div class="subheading mb-5">
             Source: 
             <a href='https://www.nlsinfo.org/content/cohorts/nlsy97' target='_blank'>U.S. Bureau of Labor Statistics National Longitudinal Survey of Youth 1997</a>
           </div>
+        </div>
       </section>
 
       <!-- BACKGROUND -->
