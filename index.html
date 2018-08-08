@@ -85,7 +85,7 @@
 
           <div class='col-20'>
             <div class="w3-tooltip">
-              <img src="img/scott.png" class="w3-round w3-hover-opacity avatar" style="width:70px">
+              <img src="img/scott_1.png" class="w3-round w3-hover-opacity avatar" style="width:70px">
               <span class="w3-text w3-round w3-tag w3-small w3-white" style="position:absolute; width:140px; left:-35px; bottom:-25px">
                 <font color=#1A5276>
                   Scott Mcalister
@@ -235,14 +235,41 @@
       <!-- User Input -->
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="userinput">
         <div class="my-auto">
-          <h2 class="mb-5">User Input</h2>
-          This is where user input will be.<br>
-          Survey style?<br>
-          should categorize questions by controllable vs uncontrollable variables<br>
-          user input results: percentage of each DV SA/HM/TW/GE like meyers briggs???<br>
-          or whichever category has majority points = result<br>
-          what the user could change / do differently to not end up SA/TW
-        </div>
+          <h2 class="mb-5">Calculate your LCI</h2>
+          Describe your relationship to your parents in home, 2002<br>
+          How many times were you arrested by age 23?<br>
+          Deliquency score? Never, seldom, sometimes, often<br>
+          Time it took to take the interview (how do we measure this? I have no idea....)<br>
+          Substance use by age 17? yes/no<br>
+          How many miles away does your data live?<br>
+          When I was in school, I used to break the rules regularly<br>
+          How often were you depressed in the last month?<br>
+          How many of your peers belong to a gang?
+          <br><br><br>
+
+          <form action="/action_page.php">
+            <label for="name">What is your first name?</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your first name...">
+            <br>
+
+            <label for="q1">Have you had sex before age 18?</label>
+            <select id="q1" name="q1">
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+            </select><br>
+
+            <label for="q2">What was your marital status at age 23?</label>
+            <select id='q1' name='q2'>
+              <option value="married">Married</option>
+              <option value="single">Single</option>
+              <option value="divorced">Divorced</option>
+              <option value="widowed">Widowed</option>
+              <option value="separated">Separated</option>
+              <option value='under23'>Under age 23</option>
+            </select><br>
+
+            <input type="submit" value="Calculate my LCI!">
+          </form>
       </section>
 
       <!-- CONCLUSIONS -->
