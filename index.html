@@ -21,7 +21,11 @@
     <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
     <script src="https://d3js.org/d3.v4.min.js"></script>
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-    <link href="https://www.w3schools.com/w3css/4/w3.css" rel="stylesheet" >
+    <link href="https://www.w3schools.com/w3css/4/w3.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
 
     <!-- Custom styles for this template -->
     <link href="css/resume.min.css" rel="stylesheet">
@@ -45,38 +49,15 @@
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#background">Background</a>
           </li>
-          
           <li class="nav-item">
-            <!-- <div class='dropdown-btn'> -->
-            <a class='nav-link dropdown-btn'>Exploration <i class="fa fa-caret-down"></i></a>
-            <div class="dropdown-container" id="hint">
-              <a class='nav-link dropdown-container js-scroll-trigger' style='text-transform:none' href="#exploration">Link 1</a>
-              <a class='nav-link dropdown-container js-scroll-trigger' style='text-transform:none' href="#explore2">Link 2</a>
-              <a class='nav-link dropdown-container js-scroll-trigger' style='text-transform:none' href="#explore3">Link 3</a>
-            </div>
+            <a class='nav-link js-scroll-trigger' href='#exploration'>Exploration</a>
           </li>
-
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#machinelearning">Machine Learning</a>
           </li>
-          
-<!-- i'm working on a dropdown menu for visualizations -->
-          <li class="nav-item dropdown">
-
-          
-
-          <a class="nav-link js-scroll-trigger dropdown-toggle" href="#visualizations">Visualizations</a>
-
-            <ul class="dropdown-menu">
-              <li>
-                <a class="nav-link js-scroll-trigger dropdown-toggle" data-toggle="dropdown" href="#" role="button">graph1<span class="caret"></span></a>
-              </li>
-            </ul>
-
-
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#visualizations">Visualizations</a>
           </li>
-<!-- /end dropdown -->
-
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#userinput">User Input</a>
           </li>
@@ -148,7 +129,6 @@
 
           <div class='col-20'>
             <div class="w3-tooltip">
-              <a href="yimej.github.io" target="_blank">
               <img src="img/elizabeth.png" class="w3-round w3-hover-opacity avatar" style="width:70px"></a>
               <span class="w3-text w3-round w3-tag w3-small w3-white" style="position:absolute; width:140px; left:-35px; top:110%">
                 <font color=#1A5276>
@@ -190,7 +170,6 @@
           After we had calculated the LCI of all the respondant's in the survey, we created the scoring divisions, which detail a final, qualitative measure of a person's LCI.  The categories are: Sad and Alone (SA), Happily Married (HM), Train Wreck (TW), Got there Eventually (GE)</p><br>
           <h4>Model Creation</h4>
           After the formation of the LCI, we moved on to creating a model that could predict a person's LCI, based on certain variables affecting thier live.  To find the variables that would be the most vaulable, and therefore be weighted heavier, we created a simple model that judged a single variable.  After completing the model for the single variable, we added an iterator to loop through the variables included in the longitudinal study, finding which ones were most influenctial on a person's LCI.  </p>
-        
         </div>
       </section>
 
@@ -199,53 +178,27 @@
         <div class="my-auto">
           <h2 class="mb-5">Exploration</h2>
 
-            
-          <!-- SAMPLE GRAPHS -->
-          <center>
-          <div id="bar"></div>
-          <script type="text/javascript" src="visualizations/barsample.js"></script>
-          </center>
-
-          <hr>
-
-          <center>
-          <div id="line"></div>
-          <script type="text/javascript" src="visualizations/linesample.js"></script>
-          </center>
-
-          <hr>
-          <!-- END/SAMPLE GRAPHS -->
-
-          <div class="d-flex flex-wrap">
-            <div class="p-2 w-50">
-              <center><bold>marital status by month/year</bold></center>
-            </div>
-
-            <div class="p-2 w-50">
-              <center><bold>cohabitation status by month/year</bold></center>
-            </div><hr>
-
-            <div class="p-2 w-50">
-              <center><bold>weight gain/loss after divorce</bold></center>
-            </div>
-
-            <div class="p-2 w-50">
-              <center><bold>ice cream preference</bold></center>
-            </div><hr>
-
-            <div class="p-2 w-50">
-              <center><bold>marijuana use vs marital status</bold></center>
-            </div>
-
-            <div class="p-2 w-50">
-              <center><bold>pie chart to show how the subjects are categorized (SA, HM, TW, GE)</bold></center>
-            </div><hr>
-
-            <center><bold>our ratings vs. how subject rated their own lives (both initial rating and final rating) ->  are divorced people happier than we expected? is there a difference between genders?</bold></center><hr>
-
-            <center><bold>a map that shows how each quadrant did overall (more specific location identifiers were purposely removed from data) with colorcoded key for SA/HM/TW/GE</bold></center>
-
+          <div class="w3-content" style="width:800px">
+            <div id="bar" class='explore w3-animate-opacity'></div>
+            <div id="line" class='explore w3-animate-opacity'></div>
+            <div id="scatter" class='explore w3-animate-opacity'></div>
+            <div id="pie" class='explore w3-animate-opacity'></div>
           </div>
+
+          <div class="w3-center">
+            <button class="w3-button w3-small w3-round w3-border w3-padding-small w3-margin-bottom w3-margin-right demo" onclick="currentDiv(1)">bar</button> 
+            <button class="w3-button w3-small w3-round w3-border w3-padding-small w3-margin-bottom w3-margin-right demo" onclick="currentDiv(2)">line</button> 
+            <button class="w3-button w3-small w3-round w3-border w3-padding-small w3-margin-bottom w3-margin-right demo" onclick="currentDiv(3)">scatter</button> 
+            <button class="w3-button w3-small w3-round w3-border w3-padding-small w3-margin-bottom w3-margin-right demo" onclick="currentDiv(4)">pie</button> 
+          </div>
+
+          <br><br>
+
+          weight gain/loss after divorce<br>
+          ice cream preference<br>
+          marijuana use vs marital status<br>
+          our ratings vs. how subject rated their own lives (both initial rating and final rating) ->  are divorced people happier than we expected? is there a difference between genders?<br>
+          a map that shows how each quadrant did overall (more specific location identifiers were purposely removed from data) with colorcoded key for SA/HM/TW/GE
         </div>
       </section>
 
@@ -261,7 +214,21 @@
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="visualizations">
         <div class="my-auto">
           <h2 class="mb-5">Visualizations</h2>
-            visualizations
+
+          <div class="w3-content">
+            <img src='visualizations/personality_scale/AgreeConsc.png' class='visual w3-animate-opacity' style='margin:auto'></img>
+            <img src='visualizations/personality_scale/ExConsc.png' class='visual w3-animate-opacity' style='margin:auto'></img>
+            <img src='visualizations/personality_scale/ExOpenness.png' class='visual w3-animate-opacity' style='margin:auto'></img>
+            <img src='visualizations/personality_scale/OpenEmotionStability.png' class='visual w3-animate-opacity' style='margin:auto'></img>
+          </div>
+          <br>
+          <div class="w3-center">
+            <button class="w3-button w3-small w3-round w3-border w3-padding-small w3-margin-bottom w3-margin-right visualdemo" onclick="currentvisualDiv(1)">Agreeableness vs. Conscientious</button> 
+            <button class="w3-button w3-small w3-round w3-border w3-padding-small w3-margin-bottom w3-margin-right visualdemo" onclick="currentvisualDiv(2)">Extraversion vs. Conscientious</button> 
+            <button class="w3-button w3-small w3-round w3-border w3-padding-small w3-margin-bottom w3-margin-right visualdemo" onclick="currentvisualDiv(3)">Extraversion vs. Openness</button> 
+            <button class="w3-button w3-small w3-round w3-border w3-padding-small w3-margin-bottom w3-margin-right visualdemo" onclick="currentvisualDiv(4)">Openness vs. Emotional Stability</button> 
+          </div>
+
         </div>
       </section>
 
@@ -282,8 +249,7 @@
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="conclusions">
         <div class="my-auto">
           <h2 class="mb-5">Conclusions</h2>
-          <p>One of the first conclusions we saw from the data was the amount of valid skips and nonresponses within certain questions, denoted as (-4) and (-5) in the data.  We noticed that some questions, especially ones that were very intetesting, had a majority of respondants skipping the question or choosing to not respond to it.  In some cases, this decreased the significance of the responses.</p><br>
-          <p></p>
+          Conclusions here.<br>
           error sources<br>
           designer babies
         </div>
@@ -293,7 +259,8 @@
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="outliers">
         <div class="my-auto">
           <h2 class="mb-5">Significant Outliers</h2>
-          Mr. 8045
+          Mr. 8045<br>
+          lci 16
         </div>
       </section>
 
@@ -309,6 +276,10 @@
     <!-- Custom scripts for this template -->
     <script src="js/resume.min.js"></script>
     <script src="js/accordion.js"></script>
+    <script type="text/javascript" src="visualizations/barsample.js"></script>
+    <script type="text/javascript" src="visualizations/scattersample.js"></script>
+    <script type="text/javascript" src="visualizations/linesample.js"></script>
+    <script type="text/javascript" src="visualizations/piesample.js"></script>
 
   </body>
 
