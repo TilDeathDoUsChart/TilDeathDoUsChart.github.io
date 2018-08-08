@@ -32,7 +32,7 @@ function makeScatter(dataset) {
     font: {size: 10}
   };
 
-  Plotly.newPlot('scatter', data, layout)
+  Plotly.newPlot('expecting', data, layout)
 //   .then(function(gd) {
 //     Plotly.toImage(gd,{height:400,width:500})
 //       .then(function(url){
