@@ -1,13 +1,12 @@
-makePlot();
+makeExpectingPlot();
 
-function makePlot() {
-  d3.csv('visualizations/expecting.csv', function(data){makeScatter(data)}); //enter file name
+function makeExpectingPlot() {
+  d3.csv('visualizations/expecting.csv', function(data){makeExpecting(data)}); //enter file name
 };
 
-function makeScatter(dataset) {
+function makeExpecting(dataset) {
   var x = [];
   var y = [];
-//   var img_png = d3.select('#png-export');
 
   for (var i = 0; i < dataset.length - 1; i++) {
     row = dataset[i];
@@ -33,11 +32,4 @@ function makeScatter(dataset) {
   };
 
   Plotly.newPlot('expecting', data, layout)
-//   .then(function(gd) {
-//     Plotly.toImage(gd,{height:400,width:500})
-//       .then(function(url){
-//         img_png.attr("src", url);
-//         return Plotly.toImage(gd,{format:'png',height:400,width:500});
-//     })
-//   });
 }
