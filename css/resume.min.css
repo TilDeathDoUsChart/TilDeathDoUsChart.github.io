@@ -1,3 +1,7 @@
+div#quote {
+    padding-left:75%;
+}
+
 .avatar {
     vertical-align: middle;
     border-radius: 50%;
