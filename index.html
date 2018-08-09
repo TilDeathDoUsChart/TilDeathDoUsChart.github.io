@@ -158,7 +158,7 @@
 
           <p>This project utilizes data from the National Longitudinal Survey of Youth 1997, sponsored by the U.S. Bureau of Labor Statistics. This study was dedicated to tracking the labor market and other life experiences of American men and women.</p>
           <p>The 1997 study was chosen over the 1979 study because it is closer (and therefore more relevant) to the ages of the majority of our classmates. The 1997 study also included variables that were of interest, like subjects’ cohabitation.</p>
-          <p>We utilized Pandas, MatPlotLib, and Plotly to explore the data and determine the needs and focus of our model. This allowed us to visualize the potential relationships between certain variables, as you will see <a href='#exploration'>below</a>. Out of this exploration, we coined the term and engineered the Longitudinal Chaos Index (LCI).</p>
+          <p>We utilized Pandas, MatPlotLib, and Plotly to explore the data and determine the needs and focus of our model. This allowed us to visualize the potential relationships between certain variables, as you will see <a class='js-scroll-trigger' href='#exploration'>below</a>. Out of this exploration, we coined the term and engineered the Longitudinal Chaos Index (LCI).</p>
           <p>The LCI is a measure of the objective chaos of a subject’s love life throughout the study. The more changes in your relationship/marital status, the higher your LCI. To create the LCI feature, we looked at reported marital status over the span of the study. The specific interview question used in the study was “Respondent's marital status in this month in [1994-2016]” and was recorded every month after the subject’s fourteenth birthday. There were six possible responses:
             <ul>
             <li>Never Married, Not Cohabitating</li>
@@ -215,9 +215,9 @@
         <div class="my-auto">
           <h2 class="mb-5">Machine Learning</h2>
           <p>After defining the LCI, we created a predictive model to predict LCI based on life events. To find the variables that would be the most predictive, we created a simple model that evaluated a single variable. The model was then iterated to loop through each interview question in the longitudinal study to determine the interview questions that most affected LCI.</p>
-          <p>Click here [ACCORDION FOR TABLE] to see the interview questions and our commentary.</p>
+          <p>Click <a onclick="accordion('opentable')"><font color=#1A5276>here</font></a> to see the interview questions and our commentary.</p>
             
-            <table class="w3-table w3-striped w3-small w3-hoverable w3-center">
+            <table id='opentable' class="w3-table w3-striped w3-small w3-hoverable w3-center w3-hide w3-animate-top">
               <tr>
                 <th>Rank</th>
                 <th>Year</th>
@@ -305,10 +305,55 @@
                 </td>
                 <td>commentary</td>
               </tr>
+              <tr>
+                <td>%</td>
+                <td>year</td>
+                <td>question</td>
+                <td>
+                  <li>responses</li>
+                </td>
+                <td>commentary</td>
+              </tr>
+              <tr>
+                <td>%</td>
+                <td>year</td>
+                <td>question</td>
+                <td>
+                  <li>responses</li>
+                </td>
+                <td>commentary</td>
+              </tr>
+              <tr>
+                <td>%</td>
+                <td>year</td>
+                <td>question</td>
+                <td>
+                  <li>responses</li>
+                </td>
+                <td>commentary</td>
+              </tr>
+              <tr>
+                <td>%</td>
+                <td>year</td>
+                <td>question</td>
+                <td>
+                  <li>responses</li>
+                </td>
+                <td>commentary</td>
+              </tr>
+              <tr>
+                <td>%</td>
+                <td>year</td>
+                <td>question</td>
+                <td>
+                  <li>responses</li>
+                </td>
+                <td>commentary</td>
+              </tr>
             </table>
             
           <br> 
-          <p>Continue <a href='#userinput'>below</a> to calculate your LCI based on your life events, using our predictive model.</p>
+          <p>Continue <a class = 'js-scroll-trigger' href='#userinput'>below</a> to calculate your LCI based on your life events, using our predictive model.</p>
           [thomas code snippet] [scott code snippet]
         </div>
       </section>
