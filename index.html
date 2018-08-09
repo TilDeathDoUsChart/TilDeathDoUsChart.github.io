@@ -168,14 +168,13 @@
             <li>Divorced</li>
             <li>Widowed</li>
             </ul>
-          <p>The LCI was designed to start at zero for each subject and then increase or decrease according to any change in response to the research question. All but two changes result in an increase by one point. The first exception is the change from “Never Married, Cohabitating” to “Married,” which we determined would not increase a subject’s chaos and therefore does not change the LCI. The second exception is the change from “Married” to “Divorced,” which increases the LCI by two points. After the survey subjects’ LCIs were calculated, we created scoring divisions to categorize LCIs into final, qualitative measurements:
+          <p>The LCI was designed to start at zero for each subject and then increase or decrease according to any change in response to the research question. All but two changes result in an increase by one point. The first exception is the change from “Never Married, Cohabitating” to “Married,” which we determined would not increase a subject’s chaos and therefore does not change the LCI. The second exception is the change from “Married” to “Divorced,” which increases the LCI by two points. After the survey subjects’ LCIs were calculated, we created scoring divisions to categorize LCIs into final, qualitative measurements:</p>
             <ul>
               <li>Sad and Alone (SA)</li>
-              <li>Happily Married (HM)</li>
+              <li>Happy Together (HT)</li>
               <li>It’s About the Journey (AJ)</li>
               <li>Train Wreck (TW)</li>
             </ul>
-          <p>After defining the LCI, we created a predictive model to predict LCI based on life events. To find the variables that would be the most predictive, we created a simple model that evaluated a single variable. The model was then iterated to loop through each interview question in the longitudinal study to determine the interview questions that most affected LCI. Click here [ACCORDION FOR TABLE] to see the interview questions and our commentary. Then, continue below to calculate your LCI based on your life events, using our predictive model.</p>
         </div>
       </section>
 
@@ -207,7 +206,7 @@
           weight gain/loss after divorce<br>
           ice cream preference<br>
           our ratings vs. how subject rated their own lives (both initial rating and final rating) ->  are divorced people happier than we expected? is there a difference between genders?<br>
-          a map that shows how each quadrant did overall (more specific location identifiers were purposely removed from data) with colorcoded key for SA/HM/TW/GE
+          a map that shows how each quadrant did overall (more specific location identifiers were purposely removed from data) with colorcoded key for SA/HT/TW/GE
         </div>
       </section>
 
@@ -215,7 +214,102 @@
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="machinelearning">
         <div class="my-auto">
           <h2 class="mb-5">Machine Learning</h2>
-          machine learning
+          <p>After defining the LCI, we created a predictive model to predict LCI based on life events. To find the variables that would be the most predictive, we created a simple model that evaluated a single variable. The model was then iterated to loop through each interview question in the longitudinal study to determine the interview questions that most affected LCI.</p>
+          <p>Click here [ACCORDION FOR TABLE] to see the interview questions and our commentary.</p>
+            
+            <table class="w3-table w3-striped w3-small w3-hoverable w3-center">
+              <tr>
+                <th>Rank</th>
+                <th>Year</th>
+                <th>Interview Question</th>
+                <th>Possible Responses</th>
+                <th>Commentary</th>
+              </tr>
+              <tr>
+                <td>9%</td>
+                <td>1999</td>
+                <td width="35%">Have you had sexual intercourse since the last interview on [date of last interview], that is, made love, had sex, or gone  the way with a person of the opposite sex?</td>
+                <td width="35%">
+                  <li>Yes</li>
+                  <li>No</li>
+                </td>
+                <td width='18%'>
+                    Approximate equivalent to age 18
+                </td>
+              </tr>
+              <tr>
+                <td>8%</td>
+                <td>2014</td>
+                <td>Respondent's marital status in this month in 2014?</td>
+                <td>
+                  <li>Never Married, Not Cohabitating</li>
+                  <li>Never Married, Cohabiting</li>
+                  <li>Married</li>
+                  <li>Legally Separated</li>
+                  <li>Divorced</li>
+                  <li>Widowed</li>
+                </td>
+                <td>Approximate equivalent to age 33 (or current age)</td>
+              </tr>
+              <tr>
+                <td>7%</td>
+                <td>2002</td>
+                <td>Relationship of the parent figure(s)/guardian(s) in household to the youth as of the survey date?</td>
+                <td>
+                  <li>Both biological parents</li>
+                  <li>Two parents, biological mother</li>
+                  <li>Two parents, biological father</li>
+                  <li>Biological mother only</li>
+                  <li>Biological father only</li>
+                  <li>Adoptive parent(s)</li>
+                  <li>Foster parent(s)</li>
+                  <li>No parents, grandparents</li>
+                  <li>No parents, other relatives</li>
+                  <li>Anything else</li>
+                </td>
+                <td>Approximate equivalent to age 21</td>
+              </tr>
+              <tr>
+                <td>7%</td>
+                <td>2014</td>
+                <td>Respondent's monthly arrest status in March 2014? (Calculated for each month beginning with the month that R turned 12.)</td>
+                <td>
+                  <li>R not arrested in this month and not arrested in a previous month</li>
+                  <li>Number of times R arrested in this month</li>
+                  <li>R arrested previously but not in this month</li>
+                </td>
+                <td>Approximate equivalent to monthly average at age 33 (or current age)</td>
+              </tr>
+              <tr>
+                <td>6%</td>
+                <td>1997</td>
+                <td>Delinquincy Score Index? (Scores range from 0 to 10; higher scores indicate more incidents of delinquency.)</td>
+                <td>
+                  <li>0</li>
+                  <li>1 TO 2</li>
+                  <li>3 TO 4</li>
+                  <li>5 TO 6</li>
+                  <li>7 TO 8</li>
+                  <li>9 TO 10</li>
+                </td>
+                <td>
+                  Approximate equivalent to age 16
+                </td>
+              </tr>
+              <tr>
+                <td>%</td>
+                <td>year</td>
+                <td>question</td>
+                <td>
+                  <li>responses</li>
+                </td>
+                <td>commentary</td>
+              </tr>
+            </table>
+            
+          <br> 
+          <p>Continue <a href='#userinput'>below</a> to calculate your LCI based on your life events, using our predictive model.</p>
+          [thomas code snippet] [scott code snippet]
         </div>
       </section>
 
