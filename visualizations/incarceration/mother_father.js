@@ -21,7 +21,7 @@ function makeMotherFather(dataset) {
     y: y1,
     type: 'scatter',
     mode: 'markers',
-    name: 'Father Ever in Prison'
+    name: 'Father'
     // marker: {color: '#1A5276'} //change to matching color
   };
 
@@ -30,16 +30,16 @@ function makeMotherFather(dataset) {
     y: y2,
     type: 'scatter',
     mode: 'markers',
-    name: 'Mother Ever in Prison'
+    name: 'Mother'
     // marker: {color: '#1A5276'} //change to matching color
   };
 
   var data = [trace1, trace2];
   
   var layout = {
-    title: "Age at First Incarceration", //enter title
-    // xaxis: {title: "x label", tickangle: -35}, //enter x axis label
-    // yaxis: {title: "y label"}, //enter y axis label
+    title: "Age at First Incarceration vs. Parent Ever in Prison", //enter title
+    xaxis: {title: "Age"}, //enter x axis label
+    yaxis: {title: "Parent Ever in Prison?"}, //enter y axis label
     font: {size: 10}
   };
 

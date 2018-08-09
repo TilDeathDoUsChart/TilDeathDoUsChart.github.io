@@ -25,7 +25,7 @@ function makeAgeFirstIncar(dataset) {
   var data = [trace];
   
   var layout = {
-    title: "Age at First Incarceration", //enter title
+    title: "Age at First Incarceration vs. Total Incarcerations", //enter title
     xaxis: {title: "Age at First Incarceration", tickangle: -35}, //enter x axis label
     yaxis: {title: "Total Incarcerations"}, //enter y axis label
     font: {size: 10}
