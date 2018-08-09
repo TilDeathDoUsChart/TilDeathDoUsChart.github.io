@@ -11,7 +11,7 @@ function makeAgeFirstIncar(dataset) {
   for (var i = 0; i < dataset.length - 1; i++) {
     row = dataset[i];
     x.push(row['Age at first incarc']); //enter name of X column values
-    y.push(row['LCI']); //enter name of Y column values
+    y.push(row['Total Incarcerations']); //enter name of Y column values
   }
 
   var trace = {
@@ -26,8 +26,8 @@ function makeAgeFirstIncar(dataset) {
   
   var layout = {
     title: "Age at First Incarceration", //enter title
-    // xaxis: {title: "x label", tickangle: -35}, //enter x axis label
-    // yaxis: {title: "y label"}, //enter y axis label
+    xaxis: {title: "Age at First Incarceration", tickangle: -35}, //enter x axis label
+    yaxis: {title: "Total Incarcerations"}, //enter y axis label
     font: {size: 10}
   };
 
