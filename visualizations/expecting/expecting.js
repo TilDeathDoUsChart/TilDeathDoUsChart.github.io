@@ -1,7 +1,7 @@
 makeExpectingPlot();
 
 function makeExpectingPlot() {
-  d3.csv('visualizations/expecting.csv', function(data){makeExpecting(data)}); //enter file name
+  d3.csv('visualizations/expecting/expecting.csv', function(data){makeExpecting(data)}); //enter file name
 };
 
 function makeExpecting(dataset) {

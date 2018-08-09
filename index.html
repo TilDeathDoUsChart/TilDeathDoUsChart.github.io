@@ -151,12 +151,10 @@
       <section class="resume-section p-3 p-lg-5 d-flex d-column" id="background">
         <div class="my-auto">
           <h2 class="mb-5">Background</h2>
-          <p class='nopadding'>
-          <fancystyle><big><big><big><big>
+          <p><center><fancystyle><big><big><big><big>
             “I get knocked down, but I get up again, and you’re never gonna keep me down.”
           </big></big></big></big></fancystyle>
-          <i><small>(Chumbawamba, 1997)</small></i>
-          </p>
+          <br><i><small>(Chumbawamba, 1997)</small></i></center></p>
 
           <p>This project utilizes data from the National Longitudinal Survey of Youth 1997, sponsored by the U.S. Bureau of Labor Statistics. This study was dedicated to tracking the labor market and other life experiences of American men and women.</p>
           <p>The 1997 study was chosen over the 1979 study because it is closer (and therefore more relevant) to the ages of the majority of our classmates. The 1997 study also included variables that were of interest, like subjects’ cohabitation.</p>
@@ -190,6 +188,7 @@
             <div id="expecting" class='explore w3-animate-opacity'></div>
             <div id="age_firstincar" class='explore w3-animate-opacity'></div>
             <div id="mother_father" class='explore w3-animate-opacity'></div>
+            <div id="druguse" class='explore w3-animate-opacity'></div>
             <div id="pie" class='explore w3-animate-opacity'></div>
             <div id="line" class='explore w3-animate-opacity'></div>
           </div>
@@ -198,15 +197,15 @@
             <button class="w3-button w3-small w3-round w3-border w3-padding-small w3-margin-bottom w3-margin-right demo" onclick="currentDiv(1)">Expecting</button> 
             <button class="w3-button w3-small w3-round w3-border w3-padding-small w3-margin-bottom w3-margin-right demo" onclick="currentDiv(2)">Total Incarcerations</button> 
             <button class="w3-button w3-small w3-round w3-border w3-padding-small w3-margin-bottom w3-margin-right demo" onclick="currentDiv(3)">Parental Incarceration</button> 
-            <button class="w3-button w3-small w3-round w3-border w3-padding-small w3-margin-bottom w3-margin-right demo" onclick="currentDiv(4)">pie</button> 
-            <button class="w3-button w3-small w3-round w3-border w3-padding-small w3-margin-bottom w3-margin-right demo" onclick="currentDiv(5)">line</button> 
+            <button class="w3-button w3-small w3-round w3-border w3-padding-small w3-margin-bottom w3-margin-right demo" onclick="currentDiv(4)">Marijuana Use</button> 
+            <button class="w3-button w3-small w3-round w3-border w3-padding-small w3-margin-bottom w3-margin-right demo" onclick="currentDiv(5)">pie</button> 
+            <button class="w3-button w3-small w3-round w3-border w3-padding-small w3-margin-bottom w3-margin-right demo" onclick="currentDiv(6)">line</button> 
           </div>
 
           <br><br>
 
           weight gain/loss after divorce<br>
           ice cream preference<br>
-          marijuana use vs marital status<br>
           our ratings vs. how subject rated their own lives (both initial rating and final rating) ->  are divorced people happier than we expected? is there a difference between genders?<br>
           a map that shows how each quadrant did overall (more specific location identifiers were purposely removed from data) with colorcoded key for SA/HM/TW/GE
         </div>
@@ -317,9 +316,10 @@
     <!-- <script type="text/javascript" src="visualizations/scattersample.js"></script> -->
     <script type="text/javascript" src="visualizations/linesample.js"></script>
     <script type="text/javascript" src="visualizations/piesample.js"></script>
-    <script type="text/javascript" src="visualizations/expecting.js"></script>
+    <script type="text/javascript" src="visualizations/expecting/expecting.js"></script>
     <script type="text/javascript" src="visualizations/incarceration/age_firstincar.js"></script>
     <script type="text/javascript" src="visualizations/incarceration/mother_father.js"></script>
+    <script type="text/javascript" src="visualizations/druguse/druguse.js"></script>
 
   </body>
 
