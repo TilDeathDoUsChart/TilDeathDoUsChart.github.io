@@ -55,16 +55,10 @@
             <a class="nav-link js-scroll-trigger" href="#machinelearning">Machine Learning</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#visualizations">Visualizations</a>
-          </li>
-          <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#calculator">LCI Calculator</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#conclusions">Conclusions</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#outliers">Significant Outliers</a>
           </li>
         </ul>
       </div>
@@ -154,24 +148,26 @@
           </big></big></big></big></fancystyle>
           <br><i><small>(Chumbawamba, 1997)</small></i></center></p>
 
+          https://www.w3schools.com/w3css/w3css_quotes.asp
+
           <p>This project utilizes data from the National Longitudinal Survey of Youth 1997, sponsored by the U.S. Bureau of Labor Statistics. This study was dedicated to tracking the labor market and other life experiences of American men and women. The 1997 study was chosen over the 1979 study because it is closer (and therefore more relevant) to the ages of the majority of our classmates. The 1997 study also included variables that were of interest, like respondents' cohabitation.</p>
           <p>We utilized Pandas, MatPlotLib, and Plotly to explore the data and determine the needs and focus of our model. This allowed us to visualize the potential relationships between certain variables seen <a class='js-scroll-trigger' href='#exploration'><b>below</b></a>. Out of this exploration, we coined the term and engineered the Longitudinal Chaos Index.</p>
-          <p>The <font color=#4591c1><b>Longitudinal Chaos Index (LCI)</b></font> is a measure of the objective chaos of a subject’s love life throughout the study. The more changes in your relationship/marital status, the higher your LCI. To create the LCI feature, we looked at reported marital status over the span of the study. The specific interview question used in the study was “Respondent's marital status in this month in [1994-2016]," which was recorded every month after the subject’s fourteenth birthday. There were six possible responses:
-            <ul><font color=#4591c1>
+          <p>The <b>Longitudinal Chaos Index (LCI)</b> is a measure of the objective chaos of a subject’s love life throughout the study. The more changes in your relationship/marital status, the higher your LCI. To create the LCI feature, we looked at reported marital status over the span of the study. The specific interview question used in the study was “Respondent's marital status in this month in [1994-2016]," which was recorded every month after the subject’s fourteenth birthday. There were six possible responses:
+            <ul>
               <li>Never Married, Not Cohabitating</li>
               <li>Never Married, Cohabitating</li>
               <li>Married</li>
               <li>Legally Separated</li>
               <li>Divorced</li>
               <li>Widowed</li>
-            </font></ul>
+            </ul>
           <p>The LCI was designed to start at zero for each subject and increase with any change to the research question response. All but two changes result in an increase by one point. The first exception is the change from “Never Married, Cohabitating” to “Married,” which we determined would not increase a subject’s chaos and therefore does not change the LCI. The second exception is the change from “Married” to “Divorced,” which increases the LCI by two points. After the survey subjects’ LCIs were calculated, we created scoring divisions to categorize LCIs into final, qualitative measurements:</p>
-            <ul><font color=#4591c1>
+            <ul>
               <li>Sad and Alone (SA)</li>
               <li>Happy Together (HT)</li>
               <li>It’s About the Journey (AJ)</li>
               <li>Train Wreck (TW)</li>
-            </font></ul>
+            </ul>
         </div>
       </section>
 
@@ -180,23 +176,32 @@
         <div class="my-auto">
           <h2 class="mb-5">Exploration</h2>
 
-          <div class="w3-content" style="width:95%">
-            <div id="expecting" class='explore w3-animate-opacity'></div>
-            <div id="age_firstincar" class='explore w3-animate-opacity'></div>
-            <div id="mother_father" class='explore w3-animate-opacity'></div>
-            <div id="druguse" class='explore w3-animate-opacity'></div>
-            <div id="pie" class='explore w3-animate-opacity'></div>
-            <div id="line" class='explore w3-animate-opacity'></div>
-          </div>
-
           <div class="w3-center">
             <button class="w3-button w3-small w3-round w3-border w3-padding-small w3-margin-bottom w3-margin-right demo" onclick="currentDiv(1)">Expecting</button> 
             <button class="w3-button w3-small w3-round w3-border w3-padding-small w3-margin-bottom w3-margin-right demo" onclick="currentDiv(2)">Total Incarcerations</button> 
             <button class="w3-button w3-small w3-round w3-border w3-padding-small w3-margin-bottom w3-margin-right demo" onclick="currentDiv(3)">Parental Incarceration</button> 
             <button class="w3-button w3-small w3-round w3-border w3-padding-small w3-margin-bottom w3-margin-right demo" onclick="currentDiv(4)">Marijuana Use</button> 
-            <button class="w3-button w3-small w3-round w3-border w3-padding-small w3-margin-bottom w3-margin-right demo" onclick="currentDiv(5)">pie</button> 
-            <button class="w3-button w3-small w3-round w3-border w3-padding-small w3-margin-bottom w3-margin-right demo" onclick="currentDiv(6)">line</button> 
+            <button class="w3-button w3-small w3-round w3-border w3-padding-small w3-margin-bottom w3-margin-right demo" onclick="currentDiv(5)">Agreeableness vs. Conscientious</button> 
+            <button class="w3-button w3-small w3-round w3-border w3-padding-small w3-margin-bottom w3-margin-right demo" onclick="currentDiv(6)">Extraversion vs. Conscientious</button> 
+            <button class="w3-button w3-small w3-round w3-border w3-padding-small w3-margin-bottom w3-margin-right demo" onclick="currentDiv(7)">Extraversion vs. Openness</button> 
+            <button class="w3-button w3-small w3-round w3-border w3-padding-small w3-margin-bottom w3-margin-right demo" onclick="currentDiv(8)">Openness vs. Emotional Stability</button> 
+            <button class="w3-button w3-small w3-round w3-border w3-padding-small w3-margin-bottom w3-margin-right demo" onclick="currentDiv(9)">pie</button> 
+            <button class="w3-button w3-small w3-round w3-border w3-padding-small w3-margin-bottom w3-margin-right demo" onclick="currentDiv(10)">line</button> 
           </div>
+
+          <div class="w3-content">
+            <center><div id="expecting" class='explore w3-animate-opacity'></div>
+            <div id="age_firstincar" class='explore w3-animate-opacity'></div>
+            <div id="mother_father" class='explore w3-animate-opacity'></div>
+            <div id="druguse" class='explore w3-animate-opacity'></div>
+            <img src='visualizations/personality_scale/AgreeConsc.png' class='explore w3-animate-opacity' style='margin:auto'></img>
+            <img src='visualizations/personality_scale/ExConsc.png' class='explore w3-animate-opacity' style='margin:auto'></img>
+            <img src='visualizations/personality_scale/ExOpenness.png' class='explore w3-animate-opacity' style='margin:auto'></img>
+            <img src='visualizations/personality_scale/OpenEmotionStability.png' class='explore w3-animate-opacity' style='margin:auto'></img>
+            <div id="pie" class='explore w3-animate-opacity'></div>
+            <div id="line" class='explore w3-animate-opacity'></div></center>
+          </div>
+          
           <br><br>
           weight gain/loss after divorce<br>
           ice cream preference<br>
@@ -364,7 +369,7 @@
       </section>
 
       <!-- VISUALIZATIONS -->
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="visualizations">
+      <!-- <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="visualizations">
         <div class="my-auto">
           <h2 class="mb-5">Visualizations</h2>
 
@@ -383,9 +388,9 @@
           </div>
 
         </div>
-      </section>
+      </section> -->
 
-      <!-- User Input -->
+      <!-- CALCULATOR -->
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="calculator">
         <div class="my-auto">
           <h2 class="mb-5">Calculate your LCI</h2>
@@ -563,17 +568,58 @@
           <h2 class="mb-5">Conclusions</h2>
           Conclusions here.<br>
           error sources<br>
-          designer babies
+          designer babies<br>
+          scroll down for the wall of shame 😁
         </div>
       </section>
 
       <!-- WALL OF SHAME -->
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="outliers">
         <div class="my-auto">
-          <h2 class="mb-5">Significant Outliers</h2>
-          Mr. 8045<br>
-          lci 16<br>
-          https://www.w3schools.com/w3css/w3css_cards.asp
+          <h2 class="mb-5">Wall of Shame</h2>
+          <br><br><br><br>
+          <div class='w3-display-container w3-padding-large'>
+            <div class="w3-border w3-display-left" style="width:30%;">
+              <header class="w3-container w3-gray">
+                <h3><big><font color='white'>Mr. 8045</font></big></h3>
+              </header>
+              <div class="w3-container w3-padding-small">
+                preggo eggos<br>
+                .<br>
+                .<br>
+                .<br>
+                .<br>
+                .<br>
+              </div>
+            </div>
+            <div class="w3-border w3-display-middle" style="width:30%;">
+              <header class="w3-container w3-gray">
+                <h3><big><font color='white'>LCI 16</font></big></h3>
+              </header>
+              <div class="w3-container w3-padding-small">
+                oops<br>
+                .<br>
+                .<br>
+                .<br>
+                .<br>
+                .<br>
+              </div>
+            </div>
+            <div class="w3-border w3-display-right" style="width:30%;">
+              <header class="w3-container w3-gray">
+                <h3><big><font color='white'>hopefully a cat lady</font></big></h3>
+              </header>
+              <div class="w3-container w3-padding-small">
+                meow<br>
+                .<br>
+                .<br>
+                .<br>
+                .<br>
+                .<br>
+              </div>
+            </div>
+          </div>
+          
         </div>
       </section>
 

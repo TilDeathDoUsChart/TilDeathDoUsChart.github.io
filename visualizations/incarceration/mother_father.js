@@ -30,8 +30,8 @@ function makeMotherFather(dataset) {
     y: y2,
     type: 'scatter',
     mode: 'markers',
-    name: 'Mother'
-    // marker: {color: '#1A5276'} //change to matching color
+    name: 'Mother',
+    marker: {color: '#efdf2d'} //change to matching color
   };
 
   var data = [trace1, trace2];
