@@ -28,7 +28,7 @@ function makeTop3_2Scatter(dataset) {
     title: "Marital Status in July 2014 (Age 23) vs. LCI", //enter title
     xaxis: {
       title: "Marital Status in July 2014 (Age 23)", 
-      tickangle: -25}, //enter x axis label
+      tickangle: -35}, //enter x axis label
     yaxis: {title: "LCI"}, //enter y axis label
     font: {size: 9}
   };

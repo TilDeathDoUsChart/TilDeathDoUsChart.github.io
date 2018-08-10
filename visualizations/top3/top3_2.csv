@@ -17,6 +17,7 @@
 19,1,"Never Married, Not Cohabitating"
 20,1,"Never Married, Cohabiting"
 21,5,"Never Married, Not Cohabitating"
+225,2,Legally Separated
 22,3,Divorced
 23,3,"Never Married, Not Cohabitating"
 24,1,Married
@@ -162,7 +163,6 @@
 222,0,"Never Married, Not Cohabitating"
 223,1,Married
 224,1,Married
-225,2,Legally Separated
 226,10,"Never Married, Not Cohabitating"
 228,3,"Never Married, Cohabiting"
 229,1,"Never Married, Not Cohabitating"

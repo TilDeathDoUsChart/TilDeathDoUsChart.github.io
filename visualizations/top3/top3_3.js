@@ -26,7 +26,7 @@ function makeTop3_3Scatter(dataset) {
   
   var layout = {
     title: "Relationship of Household Parent Figure(s)/Guardian(s) in 2002 (Age 21) vs. LCI", //enter title
-    xaxis: {title: "Relationship of Household Parent Figure(s)/Guardian(s) in 2002 (Age 21)", tickangle: -35}, //enter x axis label
+    xaxis: {title: "Relationship of Household Parent Figure(s)/Guardian(s) in 2002 (Age 21)", tickangle: -25}, //enter x axis label
     yaxis: {title: "LCI"}, //enter y axis label
     font: {size: 10}
   };
