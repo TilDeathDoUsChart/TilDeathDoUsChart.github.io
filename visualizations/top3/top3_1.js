@@ -1,7 +1,7 @@
 makeTop3_1Plot();
 
 function makeTop3_1Plot() {
-  d3.csv('visualizations/top3/top3.csv', function(data){makeTop3_1Scatter(data)}); //enter file name
+  d3.csv('visualizations/top3/top3_1.csv', function(data){makeTop3_1Scatter(data)}); //enter file name
 };
 
 function makeTop3_1Scatter(dataset) {
@@ -10,7 +10,7 @@ function makeTop3_1Scatter(dataset) {
 
   for (var i = 0; i < dataset.length - 1; i++) {
     row = dataset[i];
-    x.push(row['R3500900']); //enter name of X column values
+    x.push(row['top3_1']); //enter name of X column values
     y.push(row['LCI']); //enter name of Y column values
   }
 
