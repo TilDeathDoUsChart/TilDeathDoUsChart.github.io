@@ -34,8 +34,8 @@ function makeDrugUse(dataset) {
   var data = [trace2, trace1];
   
   var layout = {
-    title: "Marijuana Use vs. Marital Status", //enter title
-    xaxis: {title: "Marijuana Use in Last 12 Months (Age 34)", tickangle: -25}, //enter x axis label
+    title: "Marijuana Use vs. Marital Status at Age 34", //enter title
+    xaxis: {title: "Marijuana Use in Last 12 Months", tickangle: -25}, //enter x axis label
     yaxis: {title: "% of Responses with Reported Marital Status"}, //enter y axis label
     font: {size: 9},
     barmode: 'stack'

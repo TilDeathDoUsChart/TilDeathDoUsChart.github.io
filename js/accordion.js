@@ -1,3 +1,4 @@
+//ACCORDION
 function accordion(id) {
   var x = document.getElementById(id);
   if (x.className.indexOf("w3-show") == -1) {
@@ -61,4 +62,22 @@ function showvisualDivs(n) {
   }
   x[slidevisualIndex-1].style.display = "block";  
   dots[slidevisualIndex-1].className += " w3-gray";
+}
+
+//CALCULATOR
+function calculate(f) {
+  var R3500900 = document.getElementById("q1").value;
+  var S0921200 = document.getElementById("q2").value;
+  var R2602100 = document.getElementById("q3").value;
+  var S1542000 = document.getElementById("q4").value;
+  var T6216501 = document.getElementById("q5").value;
+  var E8013403 = document.getElementById("q6").value;
+  var R0070700 = document.getElementById("q7").value;
+  var S3594800 = document.getElementById("q8").value;
+  var E7013407 = document.getElementById("q9").value;
+  var R1487700 = document.getElementById("q10").value;
+
+  LCI_number = .964938 + ((R3500900 * 0.5979475274935839) + (S0921200 * -0.2559144509075464) + (R2602100 * 0.14953587653537467) + (S1542000 * 0.09574040321870364) + (T6216501 * 0.017434512445894966) + (E8013403 * 0.006967127432214822) + (R0070700 * 0.10146733512240146) + (S3594800 * 0.01703116931508945) + (E7013407 * 0.4314405704353124) + (R1487700 * 0.08036419897561888))
+
+  f.FinalLCI.value=LCI_number;
 }

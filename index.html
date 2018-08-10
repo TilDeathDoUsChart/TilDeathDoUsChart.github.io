@@ -25,7 +25,6 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  
 
     <!-- Custom styles for this template -->
     <link href="css/resume.min.css" rel="stylesheet">
@@ -59,7 +58,7 @@
             <a class="nav-link js-scroll-trigger" href="#visualizations">Visualizations</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#userinput">User Input</a>
+            <a class="nav-link js-scroll-trigger" href="#calculator">LCI Calculator</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#conclusions">Conclusions</a>
@@ -138,7 +137,6 @@
             </div>
           </div>
 
-            <!-- THIS IS FOR THE LINK ICON!!! <i class="fa fa-external-link" aria-hidden="true"></i> -->
           <br><br><br><br><br><br>
           <div class="subheading mb-5">
             Source: 
@@ -156,25 +154,24 @@
           </big></big></big></big></fancystyle>
           <br><i><small>(Chumbawamba, 1997)</small></i></center></p>
 
-          <p>This project utilizes data from the National Longitudinal Survey of Youth 1997, sponsored by the U.S. Bureau of Labor Statistics. This study was dedicated to tracking the labor market and other life experiences of American men and women.</p>
-          <p>The 1997 study was chosen over the 1979 study because it is closer (and therefore more relevant) to the ages of the majority of our classmates. The 1997 study also included variables that were of interest, like subjects’ cohabitation.</p>
-          <p>We utilized Pandas, MatPlotLib, and Plotly to explore the data and determine the needs and focus of our model. This allowed us to visualize the potential relationships between certain variables, as you will see <a class='js-scroll-trigger' href='#exploration'>below</a>. Out of this exploration, we coined the term and engineered the Longitudinal Chaos Index (LCI).</p>
-          <p>The LCI is a measure of the objective chaos of a subject’s love life throughout the study. The more changes in your relationship/marital status, the higher your LCI. To create the LCI feature, we looked at reported marital status over the span of the study. The specific interview question used in the study was “Respondent's marital status in this month in [1994-2016]” and was recorded every month after the subject’s fourteenth birthday. There were six possible responses:
-            <ul>
-            <li>Never Married, Not Cohabitating</li>
-            <li>Never Married, Cohabitating</li>
-            <li>Married</li>
-            <li>Legally Separated</li>
-            <li>Divorced</li>
-            <li>Widowed</li>
-            </ul>
-          <p>The LCI was designed to start at zero for each subject and then increase or decrease according to any change in response to the research question. All but two changes result in an increase by one point. The first exception is the change from “Never Married, Cohabitating” to “Married,” which we determined would not increase a subject’s chaos and therefore does not change the LCI. The second exception is the change from “Married” to “Divorced,” which increases the LCI by two points. After the survey subjects’ LCIs were calculated, we created scoring divisions to categorize LCIs into final, qualitative measurements:</p>
-            <ul>
+          <p>This project utilizes data from the National Longitudinal Survey of Youth 1997, sponsored by the U.S. Bureau of Labor Statistics. This study was dedicated to tracking the labor market and other life experiences of American men and women. The 1997 study was chosen over the 1979 study because it is closer (and therefore more relevant) to the ages of the majority of our classmates. The 1997 study also included variables that were of interest, like respondents' cohabitation.</p>
+          <p>We utilized Pandas, MatPlotLib, and Plotly to explore the data and determine the needs and focus of our model. This allowed us to visualize the potential relationships between certain variables seen <a class='js-scroll-trigger' href='#exploration'><b>below</b></a>. Out of this exploration, we coined the term and engineered the Longitudinal Chaos Index.</p>
+          <p>The <font color=#4591c1><b>Longitudinal Chaos Index (LCI)</b></font> is a measure of the objective chaos of a subject’s love life throughout the study. The more changes in your relationship/marital status, the higher your LCI. To create the LCI feature, we looked at reported marital status over the span of the study. The specific interview question used in the study was “Respondent's marital status in this month in [1994-2016]," which was recorded every month after the subject’s fourteenth birthday. There were six possible responses:
+            <ul><font color=#4591c1>
+              <li>Never Married, Not Cohabitating</li>
+              <li>Never Married, Cohabitating</li>
+              <li>Married</li>
+              <li>Legally Separated</li>
+              <li>Divorced</li>
+              <li>Widowed</li>
+            </font></ul>
+          <p>The LCI was designed to start at zero for each subject and increase with any change to the research question response. All but two changes result in an increase by one point. The first exception is the change from “Never Married, Cohabitating” to “Married,” which we determined would not increase a subject’s chaos and therefore does not change the LCI. The second exception is the change from “Married” to “Divorced,” which increases the LCI by two points. After the survey subjects’ LCIs were calculated, we created scoring divisions to categorize LCIs into final, qualitative measurements:</p>
+            <ul><font color=#4591c1>
               <li>Sad and Alone (SA)</li>
               <li>Happy Together (HT)</li>
               <li>It’s About the Journey (AJ)</li>
               <li>Train Wreck (TW)</li>
-            </ul>
+            </font></ul>
         </div>
       </section>
 
@@ -183,7 +180,7 @@
         <div class="my-auto">
           <h2 class="mb-5">Exploration</h2>
 
-          <div class="w3-content" style="width:800px">
+          <div class="w3-content" style="width:95%">
             <div id="expecting" class='explore w3-animate-opacity'></div>
             <div id="age_firstincar" class='explore w3-animate-opacity'></div>
             <div id="mother_father" class='explore w3-animate-opacity'></div>
@@ -200,9 +197,7 @@
             <button class="w3-button w3-small w3-round w3-border w3-padding-small w3-margin-bottom w3-margin-right demo" onclick="currentDiv(5)">pie</button> 
             <button class="w3-button w3-small w3-round w3-border w3-padding-small w3-margin-bottom w3-margin-right demo" onclick="currentDiv(6)">line</button> 
           </div>
-
           <br><br>
-
           weight gain/loss after divorce<br>
           ice cream preference<br>
           our ratings vs. how subject rated their own lives (both initial rating and final rating) ->  are divorced people happier than we expected? is there a difference between genders?<br>
@@ -214,16 +209,19 @@
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="machinelearning">
         <div class="my-auto">
           <h2 class="mb-5">Machine Learning</h2>
-          <p>After defining the LCI, we created a predictive model to predict LCI based on life events. To find the variables that would be the most predictive, we created a simple model that evaluated a single variable. The model was then iterated to loop through each interview question in the longitudinal study to determine the interview questions that most affected LCI.</p>
-          <p>Click <a onclick="accordion('opentable')"><font color=#1A5276>here</font></a> to see the interview questions and our commentary.</p>
+          <p>After defining the LCI, we created a multiple linear regression model to predict LCI based on life events. To find the variables that would be the most predictive, we created a simple model that evaluated a single variable. The model was then iterated to loop through each interview question in the longitudinal study to determine the interview questions that most affected LCI.</p>
+          <p>[thomas code snippet] [scott code snippet]<br>
+          https://www.w3schools.com/w3css/w3css_modal.asp<br>
+          https://gist.github.com/</p>
+          <p>Click <a onclick="accordion('opentable')"><font color=#1A5276><b>here</b></font></a> to view the interview questions and the adjustments made to fit our predictive model.</p>
             
-            <table id='opentable' class="w3-table w3-striped w3-small w3-hoverable w3-center w3-hide w3-animate-top">
+            <table id='opentable' class="w3-table w3-striped w3-small w3-center w3-hide w3-animate-top">
               <tr>
                 <th>Rank</th>
                 <th>Year</th>
                 <th>Interview Question</th>
                 <th>Possible Responses</th>
-                <th>Commentary</th>
+                <th>Model Adjustments</th>
               </tr>
               <tr>
                 <td>9%</td>
@@ -233,14 +231,12 @@
                   <li>Yes</li>
                   <li>No</li>
                 </td>
-                <td width='18%'>
-                    Approximate equivalent to age 18
-                </td>
+                <td width='18%'>Approximate equivalent to age 18</td>
               </tr>
               <tr>
                 <td>8%</td>
                 <td>2014</td>
-                <td>Respondent's marital status in this month in 2014?</td>
+                <td>Respondent's marital status in this month [July] in 2014?</td>
                 <td>
                   <li>Never Married, Not Cohabitating</li>
                   <li>Never Married, Cohabiting</li>
@@ -249,7 +245,7 @@
                   <li>Divorced</li>
                   <li>Widowed</li>
                 </td>
-                <td>Approximate equivalent to age 33 (or current age)</td>
+                <td>Approximate equivalent to age 33 (current age for participants under age 33)</td>
               </tr>
               <tr>
                 <td>7%</td>
@@ -278,7 +274,7 @@
                   <li>Number of times R arrested in this month</li>
                   <li>R arrested previously but not in this month</li>
                 </td>
-                <td>Approximate equivalent to monthly average at age 33 (or current age)</td>
+                <td>Approximate equivalent to monthly average at age 33 (current age for participants under age 33)</td>
               </tr>
               <tr>
                 <td>6%</td>
@@ -286,11 +282,11 @@
                 <td>Delinquincy Score Index? (Scores range from 0 to 10; higher scores indicate more incidents of delinquency.)</td>
                 <td>
                   <li>0</li>
-                  <li>1 TO 2</li>
-                  <li>3 TO 4</li>
-                  <li>5 TO 6</li>
-                  <li>7 TO 8</li>
-                  <li>9 TO 10</li>
+                  <li>1 to 2</li>
+                  <li>3 to 4</li>
+                  <li>5 to 6</li>
+                  <li>7 to 8</li>
+                  <li>9 to 10</li>
                 </td>
                 <td>
                   Approximate equivalent to age 16
@@ -299,11 +295,23 @@
               <tr>
                 <td>%</td>
                 <td>year</td>
-                <td>question</td>
+                <td>Total respondent timing from round 15 interview (measured in seconds). This is the total interview time excluding the interviewer remarks, the locator section, and the locator questions in the household information section.</td>
                 <td>
                   <li>responses</li>
+                  .1 to 1000.0
+                  1000.1 to 2000.0
+                  2000.1 to 3000.0
+                  3000.1 to 4000.0
+                  4000.1 to 5000.0
+                  5000.1 to 6000.0
+                  6000.1 to 7000.0
+                  7000.1 to 8000.0
+                  8000.1 to 9000.0
+                  9000.1 to 10000.0
+                  10000.1 to 20000.0
+                  20000.1 to 30000.0
                 </td>
-                <td>commentary</td>
+                <td>Approximate equivalent to age 30 (current age for participants under age 30)</td>
               </tr>
               <tr>
                 <td>%</td>
@@ -351,10 +359,7 @@
                 <td>commentary</td>
               </tr>
             </table>
-            
-          <br> 
-          <p>Continue <a class = 'js-scroll-trigger' href='#userinput'>below</a> to calculate your LCI based on your life events, using our predictive model.</p>
-          [thomas code snippet] [scott code snippet]
+          
         </div>
       </section>
 
@@ -381,43 +386,175 @@
       </section>
 
       <!-- User Input -->
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="userinput">
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="calculator">
         <div class="my-auto">
           <h2 class="mb-5">Calculate your LCI</h2>
-          Describe your relationship to your parents in home, 2002<br>
-          How many times were you arrested by age 23?<br>
-          Deliquency score? Never, seldom, sometimes, often<br>
-          Time it took to take the interview (how do we measure this? I have no idea....)<br>
-          Substance use by age 17? yes/no<br>
-          How many miles away does your data live?<br>
-          When I was in school, I used to break the rules regularly<br>
-          How often were you depressed in the last month?<br>
-          How many of your peers belong to a gang?
-          <br><br><br>
+          <div class='subheading mb-5'><big><big>Calculate your LCI based on your life events, using our predictive model below.</big></big></div>
+          <br>
+          
+          <table class="w3-table w3-striped">
+            <tr>
+              <td width='60%'>
+                <label for="name">What was your marital status when you were in your early 30s? If younger, select your current marital status.</label>
+              </td>
+              <td>
+                <select id='q9' name='q9'>
+                  <option value="0">Never Married, Not Cohabitating</option>
+                  <option value="1">Never Married, Cohabiting</option>
+                  <option value="2">Married</option>
+                  <option value="3">Legally Separated</option>
+                  <option value="4">Divorced</option>
+                  <option value="5">Widowed</option>
+                </select>
+              </td width='40%'>
+            </tr>
+            <tr>
+              <td>
+                <label for="name">Did you first have sexual intercourse before age 18?</label>
+              </td>
+              <td>
+                <select id='q1' name='q1'>
+                  <option value="1">Yes</option>
+                  <option value="0">No</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="name">What was the relationship of the parent figure(s)/guardian(s) to the youth in your household at when you were in your early 20s?</label>
+              </td>
+              <td>
+                <select id='q4' name='q4'>
+                  <option value="1">Both biological parents</option>
+                  <option value="2">Two parents, biological mother</option>
+                  <option value="3">Two parents, biological father</option>
+                  <option value="4">Biological mother only</option>
+                  <option value="5">Biological father only</option>
+                  <option value="6">Adoptive parent(s)</option>
+                  <option value="7">Foster parent(s)</option>
+                  <option value="8">No parents, grandparents</option>
+                  <option value="9">No parents, other relatives</option>
+                  <option value="10">Anything else</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="name">How many miles away did your father live when you were in your early 20s?</label>
+              </td>
+              <td>
+                <select id='q8' name='q8'>
+                  <option value="0">Lives in the same household</option>
+                  <option value="1">1 to 5 Miles</option>
+                  <option value="2">6 to 10 Miles</option>
+                  <option value="3">11 to 30 Miles</option>
+                  <option value="4">31 to 60 Miles</option>
+                  <option value="5">61 to 100 Miles</option>
+                  <option value="6">101 to 200 Miles</option>
+                  <option value="7">201 to 400 Miles</option>
+                  <option value="8">401 to 700 Miles</option>
+                  <option value="9">>700 Miles</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="name">How much of the time have you felt so down in the dumps that nothing could cheer you up when you were in your early 20s?</label>
+              </td>
+              <td>
+                <select id='q2' name='q2'>
+                  <option value="4">None of the time</option>
+                  <option value="3">Some of the time</option>
+                  <option value="2">Most of the time</option>
+                  <option value="1">All of the time</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="name">How would you rank the frequency of substance use when you were in your late teens?</label>
+              </td>
+              <td>
+                <select id='q3' name='q3'>
+                  <option value="0">None of the time</option>
+                  <option value="1">Some of the time</option>
+                  <option value="2">Most of the time</option>
+                  <option value="3">All of the time</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="name">How much do you agree or disagree that the following statement describes who you are and how you act? "When I was in school, I used to break rules quite regularly."</label>
+              </td>
+              <td>
+                <select id='q5' name='q5'>
+                  <option value="1">Disagree strongly</option>
+                  <option value="2">Disagree moderately</option>
+                  <option value="3">Disagree a little</option>
+                  <option value="4">Neither agree nor disagree</option>
+                  <option value="5">Agree a little</option>
+                  <option value="6">Agree moderately</option>
+                  <option value="7">Agree strongly</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="name">On a scale of 0 to 10, with higher scores indicating more incidents of deliquency, how would you rank your grade school delinquency?</label>
+              </td>
+              <td>
+                <select id='q10' name='q10'>
+                  <option value="0">0</option>
+                  <option value="1">1</option>
+                  <option value="1">2</option>
+                  <option value="2">3</option>
+                  <option value="2">4</option>
+                  <option value="3">5</option>
+                  <option value="3">6</option>
+                  <option value="4">7</option>
+                  <option value="4">8</option>
+                  <option value="5">9</option>
+                  <option value="5">10</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="name">Have you ever been arrested since the month you turned age 12?</label>
+              </td>
+              <td>
+                <select id='q6' name='q6'>
+                  <option value="99">Yes</option>
+                  <option value="0">No</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="name">What percentage of your peers belonged to a gang that did illegal activities when you were in your late teens?</label>
+              </td>
+              <td>
+                <select id='q7' name='q7'>
+                  <option value="1">Almost none (less than 10%)</option>
+                  <option value="2">About 25%</option>
+                  <option value="3">About half (50%)</option>
+                  <option value="4">About 75%</option>
+                  <option value="5">Almost all (more than 90%)</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>
+                <br>
+                <form>
+                  <input type=button value="Calculate my LCI!" onClick="calculate(this.form);">  <input type=text name=FinalLCI size=8>
+                </form>
+              </td>
+            </tr>
+          </table>
 
-          <form action="/action_page.php">
-            <label for="name">What is your first name?</label>
-            <input type="text" id="fname" name="firstname" placeholder="Your first name...">
-            <br>
-
-            <label for="q1">Have you had sex before age 18?</label>
-            <select id="q1" name="q1">
-              <option value="yes">Yes</option>
-              <option value="no">No</option>
-            </select><br>
-
-            <label for="q2">What was your marital status at age 23?</label>
-            <select id='q1' name='q2'>
-              <option value="married">Married</option>
-              <option value="single">Single</option>
-              <option value="divorced">Divorced</option>
-              <option value="widowed">Widowed</option>
-              <option value="separated">Separated</option>
-              <option value='under23'>Under age 23</option>
-            </select><br>
-
-            <input type="submit" value="Calculate my LCI!">
-          </form>
       </section>
 
       <!-- CONCLUSIONS -->
@@ -430,12 +567,13 @@
         </div>
       </section>
 
-      <!-- NOTEWORTHY PROFILES -->
+      <!-- WALL OF SHAME -->
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="outliers">
         <div class="my-auto">
           <h2 class="mb-5">Significant Outliers</h2>
           Mr. 8045<br>
-          lci 16
+          lci 16<br>
+          https://www.w3schools.com/w3css/w3css_cards.asp
         </div>
       </section>
 
