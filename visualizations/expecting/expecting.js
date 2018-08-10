@@ -19,7 +19,15 @@ function makeExpecting(dataset) {
     y: y,
     type: 'scatter',
     mode: 'markers',
-    marker: {color: '#1A5276'} //change to matching color
+    marker: {
+      color: '#1A5276', 
+      opacity:0.5,
+      size: 15,
+      line: {
+        color = '##98c4e0',
+        width = 1
+      }
+    }
   };
 
   var data = [trace];
