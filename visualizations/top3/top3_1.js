@@ -26,7 +26,7 @@ function makeTop3_1Scatter(dataset) {
   
   var layout = {
     title: "Engaged in Sexual Activity Before 1999 (Age 18) vs. LCI", //enter title
-    xaxis: {title: "Engaged in Sexual Activity Before 1999 (Age 18)", tickangle: -35}, //enter x axis label
+    xaxis: {title: "Engaged in Sexual Activity Before 1999 (Age 18)"}, //enter x axis label
     yaxis: {title: "LCI"}, //enter y axis label
     font: {size: 10}
   };
