@@ -214,11 +214,12 @@
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="machinelearning">
         <div class="my-auto">
           <h2 class="mb-5">Machine Learning</h2>
-          <p>After defining the LCI, we created a multiple linear regression model to predict LCI based on life events. To find the variables that would be the most predictive, we created a simple model that evaluated a single variable. The model was then iterated to loop through each interview question in the longitudinal study to determine the interview questions that most affected LCI.</p>
-          <p>[thomas code snippet] [scott code snippet]<br>
+          <p>After defining the LCI, we created a simple model to evaluate each variable individually and determine which variables most affected LCI. We then created a multiple linear regression model to predict LCI based on life events.</p>
+          [thomas] [scott]<br>
           https://www.w3schools.com/w3css/w3css_modal.asp<br>
           https://gist.github.com/</p>
-          <p>Click <a onclick="accordion('opentable')"><font color=#1A5276><b>here</b></font></a> to view the interview questions and the adjustments made to fit our predictive model.</p>
+          <p>Click <a onclick="accordion('opentable')"><font color=#1A5276><b>here</b></font></a> to open the eleven most predictive interview questions and the adjustments made to fit our predictive model.</p>
+          <p>Then, continue below to visualizations for the top three predictive variables.</p>
             
             <table id='opentable' class="w3-table w3-striped w3-small w3-center w3-hide w3-animate-top">
               <tr>
@@ -420,6 +421,7 @@
               </td>
               <td>
                 <select id='q9' name='q9'>
+                  <option value=""></option>
                   <option value="0">Never Married, Not Cohabitating</option>
                   <option value="1">Never Married, Cohabiting</option>
                   <option value="2">Married</option>
@@ -435,6 +437,7 @@
               </td>
               <td>
                 <select id='q1' name='q1'>
+                  <option value=""></option>
                   <option value="1">Yes</option>
                   <option value="0">No</option>
                 </select>
@@ -442,10 +445,11 @@
             </tr>
             <tr>
               <td>
-                <label for="name">What was the relationship of the parent figure(s)/guardian(s) to the youth in your household at when you were in your early 20s?</label>
+                <label for="name">What was the relationship of the parent figure(s)/guardian(s) to the youth in your household when you were in your early 20s?</label>
               </td>
               <td>
                 <select id='q4' name='q4'>
+                  <option value=""></option>
                   <option value="1">Both biological parents</option>
                   <option value="2">Two parents, biological mother</option>
                   <option value="3">Two parents, biological father</option>
@@ -465,6 +469,7 @@
               </td>
               <td>
                 <select id='q8' name='q8'>
+                  <option value=""></option>
                   <option value="0">Lives in the same household</option>
                   <option value="1">1 to 5 Miles</option>
                   <option value="2">6 to 10 Miles</option>
@@ -484,6 +489,7 @@
               </td>
               <td>
                 <select id='q2' name='q2'>
+                  <option value=""></option>
                   <option value="4">None of the time</option>
                   <option value="3">Some of the time</option>
                   <option value="2">Most of the time</option>
@@ -497,6 +503,7 @@
               </td>
               <td>
                 <select id='q3' name='q3'>
+                  <option value=""></option>
                   <option value="0">None of the time</option>
                   <option value="1">Some of the time</option>
                   <option value="2">Most of the time</option>
@@ -510,6 +517,7 @@
               </td>
               <td>
                 <select id='q5' name='q5'>
+                  <option value=""></option>
                   <option value="1">Disagree strongly</option>
                   <option value="2">Disagree moderately</option>
                   <option value="3">Disagree a little</option>
@@ -526,6 +534,7 @@
               </td>
               <td>
                 <select id='q10' name='q10'>
+                  <option value=""></option>
                   <option value="0">0</option>
                   <option value="1">1</option>
                   <option value="1">2</option>
@@ -546,6 +555,7 @@
               </td>
               <td>
                 <select id='q6' name='q6'>
+                  <option value=""></option>
                   <option value="99">Yes</option>
                   <option value="0">No</option>
                 </select>
@@ -557,6 +567,7 @@
               </td>
               <td>
                 <select id='q7' name='q7'>
+                  <option value=""></option>
                   <option value="1">Almost none (less than 10%)</option>
                   <option value="2">About 25%</option>
                   <option value="3">About half (50%)</option>
