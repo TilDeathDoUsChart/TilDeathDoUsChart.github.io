@@ -24,6 +24,11 @@ fancystyle {
     width: 13%;
 }
 
+.col-25{
+    width: 20%;
+    column-gap: 8%;
+}
+
 hr {
     display: block;
     position: relative;

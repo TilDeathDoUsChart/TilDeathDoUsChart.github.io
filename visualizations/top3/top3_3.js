@@ -18,8 +18,16 @@ function makeTop3_3Scatter(dataset) {
     x: x, 
     y: y,
     type: 'scatter',
-    mode: 'markers'//,
-    // marker: {color: '#1A5276'} //change to matching color
+    mode: 'markers',
+    marker: {
+      color: '#6de8e0',
+      opacity: 0.5,
+      size: 20,
+      line: {
+        color: '#21918a',
+        width: 2
+      }
+    }
   };
 
   var data = [trace];
