@@ -20,12 +20,11 @@ function makeExpecting(dataset) {
     type: 'scatter',
     mode: 'markers',
     marker: {
-      color: '#1A5276', 
-      opacity:0.5,
-      size: 15,
+      color: 'rgb(17, 157, 255, 0.5)',
+      size: 25,
       line: {
-        color = '##98c4e0',
-        width = 1
+        color: '#98c4e0',
+        width: 3
       }
     }
   };
