@@ -79,15 +79,17 @@ function calculate(f) {
 
   LCI_number = .982903140149 + ((R3500900 * 0.625952156134) + (S0921200 * -0.26999461452) + (R2602100 * 0.149599386981) + (S1542000 * 0.0944540254272) + (T6216501 * 0.0153368428256) + (E8013403 * 0.00695764143686) + (R0070700 * 0.114337295203) + (S3594800 * 0.0177590900125) + (E7013407 * 0.433238195882) + (R1487700 * 0.0794426357405))
 
-  f.FinalLCI.value=LCI_number;
+  LCI2 = Number((LCI_number).toFixed(2));
 
-  if (LCI_number < 0.8) {
-    ranking = "Sad and Alone.";
+  f.FinalLCI.value=LCI2;
+
+  if (LCI_number < 1) {
+    ranking = "Sad and Alone";
   } else if (LCI_number < 2) {
     ranking = "Happy Together";
-  } else if (LCI_number < 4.5) {
+  } else if (LCI_number < 3) {
     ranking = "It's About the Journey";
-  } else if (LCI_number >= 4.5) {
+  } else if (LCI_number >= 3) {
     alert("Choo choo! 🚂");
     ranking = "Train Wreck";
   };
