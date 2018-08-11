@@ -1,11 +1,14 @@
 ,age,father,mother
+6,0,Non Interview,Non Interview
+26,0,Valid Skip,No
+413,20,Refused,No
+12,0,Don't Know,No
 0,0,No,No
 1,0,No,No
 2,0,No,No
 3,0,No,No
 4,0,No,No
 5,0,No,No
-6,0,Non Interview,Non Interview
 7,0,Non Interview,Non Interview
 8,0,No,No
 9,0,Non Interview,Non Interview
@@ -25,7 +28,6 @@
 23,0,No,No
 24,0,No,No
 25,0,Yes,No
-26,0,Valid Skip,No
 27,0,No,No
 28,0,Non Interview,Non Interview
 29,0,Non Interview,Non Interview

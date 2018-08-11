@@ -1,7 +1,7 @@
 makeMotherPlot();
 
 function makeMotherPlot() {
-  d3.csv('visualizations/incarceration/mother_father.csv', function(data){makeMother(data)}); //enter file name
+  d3.csv('visualizations/incarceration/mother.csv', function(data){makeMother(data)}); //enter file name
 };
 
 // something
