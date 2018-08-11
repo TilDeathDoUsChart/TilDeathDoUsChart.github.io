@@ -19,7 +19,15 @@ function makeAgeFirstIncar(dataset) {
     y: y,
     type: 'scatter',
     mode: 'markers',
-    marker: {color: '#1A5276'} //change to matching color
+    marker: {
+      color: '#11ff8f',
+      opacity: 0.5,
+      size: 20,
+      line: {
+        color: '#0b8e50',
+        width: 2
+      }
+    }
   };
 
   var data = [trace];

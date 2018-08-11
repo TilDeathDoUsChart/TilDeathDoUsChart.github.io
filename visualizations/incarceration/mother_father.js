@@ -21,8 +21,16 @@ function makeMotherFather(dataset) {
     y: y1,
     type: 'scatter',
     mode: 'markers',
-    name: 'Father'
-    // marker: {color: '#1A5276'} //change to matching color
+    name: 'Father',
+    marker: {
+      color: '#947fff',
+      opacity: 0.5,
+      size: 20,
+      line: {
+        color: '#3e3087',
+        width: 2
+      }
+    }
   };
 
   var trace2 = {
@@ -31,7 +39,15 @@ function makeMotherFather(dataset) {
     type: 'scatter',
     mode: 'markers',
     name: 'Mother',
-    marker: {color: '#efdf2d'} //change to matching color
+    marker: {
+      color: '#f9e84f',
+      opacity: 0.5,
+      size: 20,
+      line: {
+        color: '#998d26',
+        width: 2
+      }
+    }
   };
 
   var data = [trace1, trace2];
