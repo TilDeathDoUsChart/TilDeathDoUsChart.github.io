@@ -21,10 +21,10 @@ function makeExpecting(dataset) {
     mode: 'markers',
     marker: {
       color: 'rgb(17, 157, 255, 0.5)',
-      size: 25,
+      size: 20,
       line: {
-        color: '#98c4e0',
-        width: 3
+        color: 'rgb(26, 82, 118)',
+        width: 2
       }
     }
   };

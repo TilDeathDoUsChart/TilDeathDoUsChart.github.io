@@ -151,7 +151,7 @@
           </blockquote>
 
           <p>This project utilizes data from the National Longitudinal Survey of Youth 1997, sponsored by the U.S. Bureau of Labor Statistics. This study was dedicated to tracking the labor market and other life experiences of American men and women. The 1997 study was chosen over the 1979 study because it is closer (and therefore more relevant) to the ages of the majority of our classmates. The 1997 study also included variables that were of interest, like respondents' cohabitation.</p>
-          <p>We utilized Pandas, MatPlotLib, and Plotly to explore the data and determine the needs and focus of our model. This allowed us to visualize the potential relationships between certain variables seen <a class='js-scroll-trigger' href='#exploration'><b>below</b></a>. Out of this exploration, we coined the term and engineered the Longitudinal Chaos Index.</p>
+          <p>We utilized Pandas, Plotly, and Seaborn to explore the data and determine the needs and focus of our model. This allowed us to visualize the potential relationships between certain variables seen <a class='js-scroll-trigger' href='#exploration'><b>below</b></a>. Out of this exploration, we coined the term and engineered the Longitudinal Chaos Index.</p>
           <p>The <b>Longitudinal Chaos Index (LCI)</b> is a measure of the objective chaos of a subject’s love life throughout the study. The more changes in your relationship/marital status, the higher your LCI. To create the LCI feature, we looked at reported marital status over the span of the study. The specific interview question used in the study was “Respondent's marital status in this month in [1994-2016]," which was recorded every month after the subject’s fourteenth birthday. There were six possible responses:
             <ul>
               <li>Never Married, Not Cohabitating</li>
@@ -587,11 +587,12 @@
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="conclusions">
         <div class="my-auto">
           <h2 class="mb-5">Conclusions</h2>
-          Conclusions here.<br>
-          error sources<br>
-          designer babies<br>
-          scroll down for the wall of shame 😁<br>
-          mean placeholder for negative values (per scott) - should mention because the plots don't show it, but was necessary for the model
+          <p>People are hard to predict. Even using the comprehensive research of the NLS, we were unable to find single variables that strongly correlated with our LCI.</p>
+          <p>However, the accuracy of predictions, and the utility of the model, is increased by combining variables. Speaking broadly, rule-breaking behavior in teenage years and further removed relationships with biological parents increase the likelihood of a higher LCI. Still, the model comes with built in weaknesses. Many of the statistics we used were challenging to measure numerically: assigning number values to “foster parents” or “single father” is somewhat arbitrary, and does not lend itself well to this type of model. Taken as a whole, our model demonstrates interesting profiles and trends within populations, but its predictive value remains unreliable.</p>
+          
+          <h2 class="mb-5">Implications</h2>
+          <p>With the rise of big data, with every move we make and click we take leaving behind digital trails across countless databases, the emergence of strong predictive trends from individual actions to life outcomes could be seized upon to dramatic effect. Facebook and Google, digital marketers, not to mention entities like the NSA, all have access to the kinds of personal information requested in the NLS, and will soon be rivaling its 20+ year span of collection. Working with the NLS, we can gain some insight into what a deep data portfolio on an individual might contain, and the type of conclusions that might be run on it.</p>
+          <p>Taken in that light, it becomes somewhat reassuring that no strong trends or ironclad predictions arose from our model. The statistical chaos of human behavior wards of any possibility of “Minority Report” style dystopias, at least for now.</p>
         </div>
       </section>
 
