@@ -81,14 +81,14 @@ function calculate(f) {
 
   f.FinalLCI.value=LCI_number;
 
-  if (LCI_number < 1) {
+  if (LCI_number < 0.8) {
     ranking = "Sad and Alone.";
   } else if (LCI_number < 2) {
     ranking = "Happy Together";
-  } else if (LCI_number < 3) {
+  } else if (LCI_number < 4.5) {
     ranking = "It's About the Journey";
-  } else if (LCI_number < 4) {
-    alert("You ranked as a Train Wreck...");
+  } else if (LCI_number >= 4.5) {
+    alert("Choo choo! 🚂");
     ranking = "Train Wreck";
   };
   f.FinalWords.value=ranking;
