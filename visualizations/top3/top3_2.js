@@ -38,7 +38,7 @@ function makeTop3_2Scatter(dataset) {
       title: "Marital Status in July 2014 (Age 23)", 
       tickangle: -35}, //enter x axis label
     yaxis: {title: "LCI"}, //enter y axis label
-    font: {size: 9}
+    font: {size: 8}
   };
 
   Plotly.newPlot('top3_2', data, layout)
