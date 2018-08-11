@@ -179,19 +179,21 @@
           <div class="w3-center">
             <button class="w3-button w3-small w3-round w3-border w3-padding-small w3-margin-bottom w3-margin-right demo" onclick="currentDiv(1)">Expecting</button> 
             <button class="w3-button w3-small w3-round w3-border w3-padding-small w3-margin-bottom w3-margin-right demo" onclick="currentDiv(2)">Total Incarcerations</button> 
-            <button class="w3-button w3-small w3-round w3-border w3-padding-small w3-margin-bottom w3-margin-right demo" onclick="currentDiv(3)">Parental Incarceration</button> 
-            <button class="w3-button w3-small w3-round w3-border w3-padding-small w3-margin-bottom w3-margin-right demo" onclick="currentDiv(4)">Marijuana Use</button>
+            <button class="w3-button w3-small w3-round w3-border w3-padding-small w3-margin-bottom w3-margin-right demo" onclick="currentDiv(3)">Father Incarceration</button> 
+            <button class="w3-button w3-small w3-round w3-border w3-padding-small w3-margin-bottom w3-margin-right demo" onclick="currentDiv(4)">Mother Incarceration</button>
+            <button class="w3-button w3-small w3-round w3-border w3-padding-small w3-margin-bottom w3-margin-right demo" onclick="currentDiv(5)">Marijuana Use</button>
             <br>
-            <button class="w3-button w3-small w3-round w3-border w3-padding-small w3-margin-bottom w3-margin-right demo" onclick="currentDiv(5)">Agreeableness vs. Conscientious</button> 
-            <button class="w3-button w3-small w3-round w3-border w3-padding-small w3-margin-bottom w3-margin-right demo" onclick="currentDiv(6)">Extraversion vs. Conscientious</button> 
-            <button class="w3-button w3-small w3-round w3-border w3-padding-small w3-margin-bottom w3-margin-right demo" onclick="currentDiv(7)">Extraversion vs. Openness</button> 
-            <button class="w3-button w3-small w3-round w3-border w3-padding-small w3-margin-bottom w3-margin-right demo" onclick="currentDiv(8)">Openness vs. Emotional Stability</button> 
+            <button class="w3-button w3-small w3-round w3-border w3-padding-small w3-margin-bottom w3-margin-right demo" onclick="currentDiv(6)">Agreeableness vs. Conscientious</button> 
+            <button class="w3-button w3-small w3-round w3-border w3-padding-small w3-margin-bottom w3-margin-right demo" onclick="currentDiv(7)">Extraversion vs. Conscientious</button> 
+            <button class="w3-button w3-small w3-round w3-border w3-padding-small w3-margin-bottom w3-margin-right demo" onclick="currentDiv(8)">Extraversion vs. Openness</button> 
+            <button class="w3-button w3-small w3-round w3-border w3-padding-small w3-margin-bottom w3-margin-right demo" onclick="currentDiv(9)">Openness vs. Emotional Stability</button> 
           </div>
 
           <div class="w3-content">
             <center><div id="expecting" class='explore w3-animate-opacity'></div>
             <div id="age_firstincar" class='explore w3-animate-opacity'></div>
-            <div id="mother_father" class='explore w3-animate-opacity'></div>
+            <div id="mother" class='explore w3-animate-opacity'></div>
+            <div id="father" class='explore w3-animate-opacity'></div>
             <div id="druguse" class='explore w3-animate-opacity'></div>
             <img src='visualizations/personality_scale/AgreeConsc.png' class='explore w3-animate-opacity' style='margin:auto'></img>
             <img src='visualizations/personality_scale/ExConsc.png' class='explore w3-animate-opacity' style='margin:auto'></img>
@@ -686,7 +688,8 @@
     <script src="js/accordion.js"></script>
     <script type="text/javascript" src="visualizations/expecting/expecting.js"></script>
     <script type="text/javascript" src="visualizations/incarceration/age_firstincar.js"></script>
-    <script type="text/javascript" src="visualizations/incarceration/mother_father.js"></script>
+    <script type="text/javascript" src="visualizations/incarceration/mother.js"></script>
+    <script type="text/javascript" src="visualizations/incarceration/father.js"></script>
     <script type="text/javascript" src="visualizations/druguse/druguse.js"></script>
     <script type="text/javascript" src="visualizations/top3/top3_1.js"></script>
     <script type="text/javascript" src="visualizations/top3/top3_2.js"></script>
