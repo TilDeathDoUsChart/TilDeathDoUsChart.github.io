@@ -87,11 +87,11 @@ function calculate(f) {
     ranking = "Sad and Alone";
   } else if (LCI_number < 2) {
     ranking = "Happy Together";
-  } else if (LCI_number < 5) {
+  } else if (LCI_number < 6) {
     ranking = "It's About the Journey";
-  } else if (LCI_number >= 5) {
-    alert("Choo choo! 🚂");
+  } else if (LCI_number >= 6) {
     ranking = "Train Wreck";
+    alert("Choo choo! 🚂");
   };
   f.FinalWords.value=ranking;
 
