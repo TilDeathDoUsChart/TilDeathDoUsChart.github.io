@@ -123,7 +123,7 @@
 
           <div class='col-20'>
             <div class="w3-tooltip">
-              <a href='https://yimej.github.io' target='_blank'><img src="img/elizabeth.png" class="w3-round w3-hover-opacity avatar" style="width:70px"></a>
+              <a href='https://yimej.github.io' target='_blank'><img src="img/elizabeth.jpg" class="w3-round w3-hover-opacity avatar" style="width:70px"></a>
               <span class="w3-text w3-round w3-tag w3-small w3-white" style="position:absolute; width:140px; left:-35px; top:110%">
                 <font color=#1A5276>
                 Elizabeth Yim
@@ -178,26 +178,26 @@
           <h2 class="mb-5">Exploration</h2>
 
           <div class="w3-center">
-            <button class="w3-button w3-small w3-round w3-border w3-padding-small w3-margin-bottom w3-margin-right demo" onclick="currentDiv(1)">Expecting</button> 
-            <button class="w3-button w3-small w3-round w3-border w3-padding-small w3-margin-bottom w3-margin-right demo" onclick="currentDiv(2)">Total Incarcerations</button> 
-            <button class="w3-button w3-small w3-round w3-border w3-padding-small w3-margin-bottom w3-margin-right demo" onclick="currentDiv(3)">Father Incarceration</button> 
-            <button class="w3-button w3-small w3-round w3-border w3-padding-small w3-margin-bottom w3-margin-right demo" onclick="currentDiv(4)">Mother Incarceration</button>
-            <button class="w3-button w3-small w3-round w3-border w3-padding-small w3-margin-bottom w3-margin-right demo" onclick="currentDiv(5)">Marijuana Use</button>
-            <button class="w3-button w3-small w3-round w3-border w3-padding-small w3-margin-bottom w3-margin-right demo" onclick="currentDiv(6)">Marital History</button>
+            <button class="w3-button w3-small w3-round w3-border w3-padding-small w3-margin-bottom w3-margin-right demo" onclick="currentDiv(1)">Marital History</button> 
+            <button class="w3-button w3-small w3-round w3-border w3-padding-small w3-margin-bottom w3-margin-right demo" onclick="currentDiv(2)">Expecting</button>
+            <button class="w3-button w3-small w3-round w3-border w3-padding-small w3-margin-bottom w3-margin-right demo" onclick="currentDiv(3)">Total Incarcerations</button> 
+            <button class="w3-button w3-small w3-round w3-border w3-padding-small w3-margin-bottom w3-margin-right demo" onclick="currentDiv(4)">Father Incarceration</button> 
+            <button class="w3-button w3-small w3-round w3-border w3-padding-small w3-margin-bottom w3-margin-right demo" onclick="currentDiv(5)">Mother Incarceration</button>
+            <!-- <button class="w3-button w3-small w3-round w3-border w3-padding-small w3-margin-bottom w3-margin-right demo" onclick="currentDiv(5)">Marijuana Use</button> -->
             <br>
-            <button class="w3-button w3-small w3-round w3-border w3-padding-small w3-margin-bottom w3-margin-right demo" onclick="currentDiv(7)">Agreeableness vs. Conscientious</button> 
-            <button class="w3-button w3-small w3-round w3-border w3-padding-small w3-margin-bottom w3-margin-right demo" onclick="currentDiv(8)">Extraversion vs. Conscientious</button> 
-            <button class="w3-button w3-small w3-round w3-border w3-padding-small w3-margin-bottom w3-margin-right demo" onclick="currentDiv(9)">Extraversion vs. Openness</button> 
-            <button class="w3-button w3-small w3-round w3-border w3-padding-small w3-margin-bottom w3-margin-right demo" onclick="currentDiv(10)">Openness vs. Emotional Stability</button> 
+            <button class="w3-button w3-small w3-round w3-border w3-padding-small w3-margin-bottom w3-margin-right demo" onclick="currentDiv(6)">Agreeableness vs. Conscientious</button> 
+            <button class="w3-button w3-small w3-round w3-border w3-padding-small w3-margin-bottom w3-margin-right demo" onclick="currentDiv(7)">Extraversion vs. Conscientious</button> 
+            <button class="w3-button w3-small w3-round w3-border w3-padding-small w3-margin-bottom w3-margin-right demo" onclick="currentDiv(8)">Extraversion vs. Openness</button> 
+            <button class="w3-button w3-small w3-round w3-border w3-padding-small w3-margin-bottom w3-margin-right demo" onclick="currentDiv(9)">Openness vs. Emotional Stability</button> 
           </div>
 
           <div class="w3-content">
-            <center><div id="expecting" class='explore w3-animate-opacity'></div>
-            <div id="age_firstincar" class='explore w3-animate-opacity'></div>
-            <div id="father" class='explore w3-animate-opacity'></div>
-            <div id="mother" class='explore w3-animate-opacity'></div>
-            <div id="druguse" class='explore w3-animate-opacity'></div>
-            <div id="mhistory" class='explore w3-animate-opacity'></div>
+            <center><img src='visualizations/mhistory.png' class='explore w3-animate-opacity' style='margin:auto'></img>
+            <img src='visualizations/expecting.png' class='explore w3-animate-opacity' style='margin:auto'></img>
+            <img src='visualizations/incarc_total.png' class='explore w3-animate-opacity' style='margin:auto'></img>
+            <img src='visualizations/incarc_father.png' class='explore w3-animate-opacity' style='margin:auto'></img>
+            <img src='visualizations/incarc_mother.png' class='explore w3-animate-opacity' style='margin:auto'></img>
+            <!-- <div id="druguse" class='explore w3-animate-opacity'></div> -->
             <img src='visualizations/personality_scale/AgreeConsc.png' class='explore w3-animate-opacity' style='margin:auto'></img>
             <img src='visualizations/personality_scale/ExConsc.png' class='explore w3-animate-opacity' style='margin:auto'></img>
             <img src='visualizations/personality_scale/ExOpenness.png' class='explore w3-animate-opacity' style='margin:auto'></img>
@@ -213,7 +213,7 @@
           <h2 class="mb-5">Machine Learning</h2>
           <p>After defining the LCI, we created a simple model (click to <a onclick="accordion('openIterator')"><font color=#1A5276><b>open/close</b></font></a> the single iterator code viewer) to evaluate each variable individually and determine which variables most affected LCI. We then created a multiple linear regression model (click to <a onclick="accordion('openRegression')"><font color=#1A5276><b>open/close</b></font></a> the model regression code viewer) to predict LCI based on life events.</p>
           <p>Click to <a onclick="accordion('opentable')"><font color=#1A5276><b>open/close</b></font></a> the eleven most predictive interview questions and the adjustments made to fit our predictive model.</p>
-          <p>Then, continue below to see visualizations for the top three predictive variables.</p>
+          <!-- <p>Then, continue below to see visualizations for the top three predictive variables.</p> -->
             <div id='openIterator' class='w3-center w3-hide w3-animate-top'>
               <script src="https://gist.github.com/TilDeathDoUsChart/b4f434b477c6c620971a35e772ed9557.js"></script>
             </div>
@@ -390,7 +390,7 @@
                 <td>Approximate equivalent to age 16</td>
               </tr>
             </table>
-          <br>
+          <!-- <br>
           <div class="w3-center">
             <button class="w3-button w3-small w3-round w3-border w3-padding-small w3-margin-bottom w3-margin-right visualdemo" onclick="currentvisualDiv(1)">Sexually Active Under 18 vs. LCI</button> 
             <button class="w3-button w3-small w3-round w3-border w3-padding-small w3-margin-bottom w3-margin-right visualdemo" onclick="currentvisualDiv(2)">Marital Status vs. LCI</button> 
@@ -401,7 +401,7 @@
             <center><div id="top3_1" class='visual w3-animate-opacity' style='max-width:50%'></div>
             <div id="top3_2" class='visual w3-animate-opacity'></div>
             <div id="top3_3" class='visual w3-animate-opacity'></div></center>
-          </div>
+          </div> -->
 
         </div>
       </section>
